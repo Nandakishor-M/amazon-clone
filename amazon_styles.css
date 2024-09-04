@@ -1,0 +1,555 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#header-portion{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 99px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #131921; */
+}
+
+/* navigation part */
+#first-nav-portion{
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: #131921;
+    align-items: center;
+    padding-left: .5rem;
+}
+
+
+/* amazon Logo part */
+.nav-logo{
+    width: 120px; /* 6.8vw */
+    height: 50px;
+}
+
+
+.logo{
+    height: 50px;
+    padding: 10px;
+    background-image: url("./images/amazon_icon.png");
+    background-size: 90px;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+    background-position-x: 14px;
+}
+.logo:hover{
+    cursor: pointer;
+    border:1px solid white;
+}
+
+
+/* amazon location part */
+.location-portion{
+    display: flex;
+    width: 204px;
+    height: 50px;
+    padding: 4px;
+    margin-left: .3rem;
+
+}
+
+.location-portion:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.location-icon{
+    width: 22px;
+    height: 34px;
+    background-image: url("./images/location-icon.jpg");
+    background-size: 11px;
+    background-repeat: no-repeat;    
+    background-position: 5px 12px;
+}
+
+.location-details{
+    color: white;
+}
+
+.place{
+    margin-left: 5px;
+    color: hsl(0, 0%, 59%);
+    font-size: .80rem;
+}
+
+.location-update{
+    font-size: .8rem;
+    margin-top: 3px;
+    margin-left: 5px;
+    font-weight: 900;
+}
+
+/* Search part */
+.search-portion{
+    display: flex;
+    width: 52.4%;
+    margin: 0 .5rem 0 .5rem;
+}
+
+.dropdown-selector{
+    width: 50px;
+}
+
+.dropdown-list{
+    width: 50px;
+    height: 38.5px;
+    font-size: .85rem;
+    border-radius: 6px 0 0 6px;
+    appearance: none;
+    background-color: rgb(226, 225, 225);
+    background-image: url("./images/arrow_key.png");
+    background-size:9px;
+    background-repeat: no-repeat;
+    background-position: 31px;
+    padding-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.input-search{
+    width: 90%;
+}
+
+.text-based-searching{
+    width: 100%;
+    height: 38.5px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid rgb(226, 225, 225);
+    font-size: .95rem;
+    word-spacing: 2px;
+    outline-style:none;
+}
+.text-based-searching::placeholder{
+    text-indent: 7px;
+    font-stretch:wider;
+}
+
+.submit-button{
+    width: 45px;
+    height: 38.5px;
+    background-color: rgb(255, 189, 66);
+    background-image: url("./images/search-button.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    border: none;
+}
+
+/* Language selecting portion */
+.language-selector-portion{
+    display: flex;
+    width: 78px;
+    height: 50px;
+    align-items: flex-end;
+    padding-left: 9px;
+}
+
+.flag-icon{
+    width: 27px;
+    height: 30px;
+    background-image: url("./images/Flag_of_the_United_States.png");
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    background-position-y: 2px;
+}
+
+.language-abbrevation{
+    width: 28px;
+    height: 30px;
+    color: white;
+    font-size: .90rem;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+.drop-arrow{
+    width: 10px;
+    height: 40px;
+    background-image: url("./images/grey_arrow.png");
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position-y: 21px;
+    background-position-x: 1px;
+    transform: rotate(90deg);
+}
+
+.language-selector-portion:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+/* Account detail portion */
+.account-portion{
+    display: flex;
+    width: 131px;
+    height: 50px;
+    align-items: center;
+    padding-left: .5rem;
+    margin-left: .3rem;
+}
+
+.account-portion:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.account-details{
+    width: 110px;
+}
+
+.line-one{
+    width: 100px;
+    color: white;
+    font-size: .80rem;
+}
+
+.line-two{
+    width: 104px;
+    color: white;
+    font-weight: bolder;
+    font-size: .85rem;
+}
+
+.arrow-key{
+    width: 15px;
+    height: 12px;
+    background-image: url("./images/grey_arrow.png");
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    background-size: 10px;
+    margin: 20px 5px 0 0;
+}
+
+/* Return and order details */
+.order-details{
+    color: white;
+    width: 85px;
+    height: 50px;
+    place-content: center;
+    padding: 0 0 0 8px;
+    margin-left: .3rem
+}
+
+.return{
+    font-size: .77rem;
+}
+
+.orders{
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.order-details:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+/* Cart details portion */
+.cart-portion{
+    display: flex;
+    width: 95px;
+    height: 50px;
+    padding: 0 0 0 5px;
+    align-items: center;
+    margin-left: .3rem;;
+}
+
+.cart-logo{
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/amazon_cart.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    background-position: -12px;
+}
+
+.cart-portion p{
+    position: relative;
+    color: white;
+    font-weight: 600;
+    top: .5rem;
+    left: -.3rem;
+}
+
+.cart-portion:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+/* Second navigation  */
+
+#second-nav-portion{
+    display: flex;
+    width: 100vw;
+    height: 39px;
+    background-color: #232f3e;
+    padding: 0 0 0 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+#second-nav-portion > *:hover{
+    height: 38.4px;
+    border: 1px solid white;
+}
+
+/* Menu bar of second navigation */
+.menu-bar{
+    display: flex;
+    width: 60px;
+    height: 38.4px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.menu-icon{
+    width: 30px;
+    height: 37px;
+    background-image: url("./images/menu_bar.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 6px 8px;
+}
+.menu-bar p{
+    width: 20px;
+    height: 35px;
+    font-size: .95rem;
+    font-weight: 600;
+    color: white;
+    margin: 9px 0 0 0;
+}
+
+
+/* Todays Deals portion */
+.todays-deals-portion{
+    width: 108px;
+    height: 38.4px;
+    padding: .6rem .6rem;
+    color: white;
+    font-size: .8rem;
+}
+
+/* Customer Service portion style */
+.customer-service-portion{
+    width: 128.1px;
+    height: 38.4px;
+    color: white;
+    font-size: .8rem;
+    padding: .6rem .6rem;
+}
+
+/* Registry portion style */
+.registry-portion{
+    width:  75px;
+    height: 38.4px;
+    color: white;
+    font-size: .8rem;
+    padding: .6rem .6rem;
+}
+
+/* Gift card portion style */
+.gift-cards-portion{
+    width: 85px;
+    height: 38.4px;
+    color: white;
+    font-size: .8rem;
+    padding: .6rem .6rem;
+}
+
+/* Sell portion style */
+.sell-portion{
+    width: 45px;
+    height: 38.4px;
+    color: white;
+    font-size: .8rem;
+    padding: .6rem .6rem;
+}
+
+/* content portion of page */
+.content-portion{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 80vh;
+    background-color: #e3e6e6;
+    /* padding: 0 2.5rem; */
+}
+
+/* background image portion style */
+.background-image-portion{
+    width: 100%;
+    height: 70vh;
+    padding: 0 2.5rem;
+}
+
+.background-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* right and left page changer button */
+.right-pagechanger-button{
+    cursor: pointer;
+    position: absolute;
+    width: 84px;
+    height: 250px;
+    top: 0;
+    left: 2.7rem;
+    border: 1px solid;
+}
+
+.right-pagechanger-button-icon{
+    cursor: pointer;
+    position: absolute;
+    width: 22px;
+    height: 43px;
+    background: transparent;
+    border: none;
+    background-image: url("./images/free-left-arrow.png");
+    background-repeat: no-repeat;
+    background-size: 22px;
+    top: 43%;
+    left: 32%;
+}
+
+
+.left-pagechanger-button{
+    cursor: pointer;
+    position: absolute;
+    width: 84px;
+    height: 250px;
+    top: 0;
+    right: 2.7rem;
+    border: 1px solid;
+}
+
+.left-pagechanger-button-icon{
+    cursor: pointer;
+    position: absolute;
+    width: 22px;
+    height: 43px;
+    background: transparent;
+    border: none;
+    background-image: url("./images/free-left-arrow.png");
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-size: 22px;
+    top: 42.13%;
+    right: 32%;
+}
+
+/* Content background portion style.Content background is below the background-image */
+.content-background-portion{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    top: -47%;
+    padding: 0 5rem;
+    background: linear-gradient(2deg,rgba(227, 230, 230, 0.5), rgba(227, 230, 230, .75));
+}
+
+/* amazon description style above image */
+.amazon-description{
+    height: 40px;
+    color: #0f1111;
+    text-align: center;
+    background-color: #f5f6f6;
+    padding: .5rem 0;
+    /* margin: 0 4rem; */
+}
+
+/* product list portion style */
+.product-list-portion{
+    /* display: grid; */
+    width:30vw;
+    height: auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 330px)); */
+}
+
+.product-list{
+    width: 22vw;
+    display: block;
+    height: 52vh;
+    /* margin: 0 4rem; */
+    background-color: #fff;
+    padding: 1rem 1rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+/* style of grid one. box one of list */
+.product{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 0;
+    margin: 8px 0;
+}
+
+.product-one img{
+    display: block;
+    width: 100%;
+    height: 130px;
+}
+
+.product-row-one p, 
+.product-row-two p{
+    position: relative;
+    font-size: 1rem;
+    color: #0f1111;
+}
+.product-row-one, .product-row-two{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 160px));
+    gap: .5rem;
+}
+.product-row-two{
+    margin-top: .4rem;
+}
+.product-two img{
+    display: block;
+    width: 100%;
+    height: 130px;
+}
+
+.product-three img{
+    display: block;
+    width: 100%;
+    height: 130px;
+
+}
+
+.product-four img{
+    display: block;
+    width: 100%;
+    height: 130px;
+}  
+
+.see-more-link{
+    margin: .3rem 0 0 0;
+}
+
+.see-more-link p{
+    color: #007185;
+    font-size: 1rem;
+}
+
+.see-more-link p:hover{
+    color: rgb(255, 96, 96);
+}
